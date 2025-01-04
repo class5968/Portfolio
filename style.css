@@ -1,6 +1,5 @@
 .background {
     display: flex;
-    color: #000000;
     background-color: #000000;
     padding: 32px;
     gap: 32px;
@@ -9,25 +8,21 @@
     font-weight: 600;
     font-style: normal;
     font-size: 32;
-    color: #ffffff;
 }
 .subtitle {
     font-weight: 300;
     font-style: normal;
     font-size: 28;
-    color: #ffffff;
 }
-.maintext {
+.maintext>* {
     font-weight: 600;
     font-style: normal;
     font-size: 20;
-    color: #ffffff;
 }
-.subtext {
+.subtext>* {
     font-weight: 300;
     font-style: normal;
     font-size: 14;
-    color: #ffffff;
 }
 .primary {
     gap: 16px;
@@ -35,4 +30,16 @@
 }
 .secondary {
     gap: 16px;
+}
+.main {
+    
+}
+.portfolio {
+
+}
+.broadcast {
+
+}
+.contacts {
+
 }
