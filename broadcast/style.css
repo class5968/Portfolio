@@ -7,8 +7,11 @@
     width: 100%; 
     background-color: #000000;
     justify-content: center;
+    align-items: center;
 }
 .background {
+    justify-content: center;
+    align-items: center;
     max-width: 450px;
     display: flex;
     background-color: #000000;
