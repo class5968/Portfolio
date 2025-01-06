@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 .background {
     display: flex;
     background-color: #000000;
@@ -11,10 +14,13 @@
 .home {
     display: flex;
     padding: 32px;
-    gap: 32px;
+    gap: 8px;
     flex: 1;
     margin: 0px;
     flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
 }
 .portfolio {
     display: flex;
@@ -23,6 +29,7 @@
     flex: 1;
     margin: 0px;
     flex-direction: column;
+    vertical-align: top;
 }
 .broadcast {
     display: flex;
@@ -31,6 +38,7 @@
     flex: 1;
     margin: 0px;
     flex-direction: column;
+    vertical-align: top;
 }
 .contacts {
     display: flex;
@@ -38,6 +46,7 @@
     gap: 32px;
     margin: 0px;
     flex-direction: column;
+    vertical-align: top;
 }
 .maintitle {
     font-family: "Pretendard";
@@ -49,7 +58,7 @@
 }
 .subtitle {
     font-family: "Pretendard";
-    font-weight: 700;
+    font-weight: 300;
     font-style: normal;
     font-size: 28px;
     color: #fff;
@@ -78,10 +87,10 @@
     flex-direction: row;
     gap: 16px;
     height: 48px;
-    flex: 1;
     justify-content: center;
     margin: 0px;
     white-space: nowrap;
+    width: 100%;
 }
 .secondary {
     display: flex;
@@ -92,4 +101,18 @@
     flex: 1;
     margin: 0px;
     white-space: nowrap;
+}
+.youtube {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin: 0px;
+
+}
+.video-container>iframe {
+    border: none;
+    border-radius: 24px;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
