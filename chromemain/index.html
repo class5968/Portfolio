@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chrome</title>
-    <link rel="stylesheet" href="/Portfolio/chromemain/style.css">
+    <link rel="stylesheet" href="/chromemain/style.css">
 </head>
-<body>
-    
-    
+<body class="main">
+    <div class="chromewallpaper">
+        <div class="chromemain">
+            <div class="chromeleft">
+                <div class="chromeclock">
+                    <div id="clock">로딩 중...</div>
+                    <div id="date">로딩 중...</div>
+                </div>
+                <div class="chromedocs">
+                    <img src="/chromemain/assets/googledocs.png" width="128px" height="128px" href="https://docs.google.com/document/u/0/">
+                    <img src="/chromemain/assets/googlesheets.png" width="128px" height="128px" href="https://docs.google.com/spreadsheets/u/0/">
+                    <img src="/chromemain/assets/googleslides.png" width="128px" height="128px" href="https://docs.google.com/presentation/u/0/">                
+                </div>
+            </div>
+            <div class="chromeright">
+                <img src="/chromemain/assets/wakzoo.png" width="128px" height="128px" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=27842958&search.boardtype=L">
+                <img src="/chromemain/assets/jntech.png" width="128px" height="128px" href="https://cafe.naver.com/ArticleList.nhn?search.clubid=30716229&search.boardtype=L">
+                <img src="/chromemain/assets/wiki.png" width="128px" height="128px" href="https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8">                
+                <img src="/chromemain/assets/youtube.png" width="128px" height="128px" href="https://www.youtube.com/">
+                <img src="/chromemain/assets/soop.png" width="128px" height="128px" href="https://www.sooplive.co.kr/">
+                <img src="/chromemain/assets/segu.png" width="128px" height="128px" href="https://play.sooplive.co.kr/gosegu2/">                
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    function updateClock() {
+        const now = new Date(); // 현재 시간 가져오기
+        const hours = String(now.getHours()).padStart(2, '0'); // 시 (2자리)
+        const minutes = String(now.getMinutes()).padStart(2, '0'); // 분 (2자리)
+        const seconds = String(now.getSeconds()).padStart(2, '0'); // 초 (2자리)
+        document.getElementById('clock').textContent = `${hours}:${minutes}`;
+    }
+
+    // 1초마다 시간 업데이트
+    setInterval(updateClock, 1000);
+
+    // 페이지 로드 시 즉시 실행
+    updateClock();
+
+    function updateDate() {
+            const now = new Date();
+
+            // 요일 배열
+            const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+
+            // 현재 월, 일, 요일
+            const month = now.getMonth() + 1; // 월은 0부터 시작하므로 +1
+            const date = now.getDate();
+            const day = days[now.getDay()];
+
+            // "n월 n일 n요일" 형식으로 표시
+            document.getElementById('date').textContent = `${month}월 ${date}일 ${day}`;
+        }
+
+        // 페이지 로드 시 실행
+        updateDate();
+</script>
 </html>
