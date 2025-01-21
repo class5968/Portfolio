@@ -1,0 +1,108 @@
+<!--
+    Chrome - New Tab UI (index.html)
+
+    Created by: Minsu Kim <minsu.kim@lunaiz.com> on 2025-01-21
+    Updated by: Minsu Kim <minsu.kim@lunaiz.com> on 2025-01-21
+
+    Note: 각 URL이 새 탭으로 열리게 되어있는데, target="_blank" rel="noopener" 이 두 속성을 삭제하면 현재 창에서 열립니다.
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>새 탭</title>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+</head>
+
+<body>
+    <main>
+        <section class="vertical-clocks">
+            <div class="individual clock">
+                <span id="clock" class="hidden">00:00</span>
+                <span id="date" class="hidden">0월 00일 일요일</span>
+            </div>
+
+            <div class="horizontal-links">
+                <a href="https://docs.google.com/document/u/0/" title="Google Docs" target="_blank" rel="noopener">
+                    <div class="individual link">
+                        <img src="https://www.google.com/images/about/docs-icon.svg" alt="Google Docs" />
+                        <span>Google Docs</span>
+                    </div>
+                </a>
+
+                <a href="https://docs.google.com/spreadsheets/u/0/" title="Google Sheets" target="_blank"
+                    rel="noopener">
+                    <div class="individual link">
+                        <img src="https://www.google.com/images/about/sheets-icon.svg" alt="Google Sheets" />
+                        <span>Google Sheets</span>
+                    </div>
+                </a>
+
+                <a href="https://docs.google.com/slides/u/0/" title="Google Sldes" target="_blank" rel="noopener">
+                    <div class="individual link">
+                        <img src="https://www.google.com/images/about/slides-icon.svg" alt="Google Slides" />
+                        <span>Google Slides</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="grid-links">
+            <a href="https://cafe.naver.com/steamindiegame.cafe" title="왁물원" target="_blank" rel="noopener">
+                <div class="individual link">
+                    <img src="assets/images/wakzoo.svg" alt="왁물원" />
+                    <span>왁물원</span>
+                </div>
+            </a>
+
+            <a href="https://cafe.naver.com/jntechreview.cafe" title="왁물원" target="_blank" rel="noopener">
+                <div class="individual link">
+                    <img src="assets/images/jntech.png" alt="JN테크리뷰" />
+                    <span>JN테크리뷰</span>
+                </div>
+            </a>
+
+            <a href="https://namu.wiki" title="나무위키" target="_blank" rel="noopener">
+                <div class="individual link">
+                    <img src="assets/images/namuwiki.png" alt="나무위키" />
+                    <span>나무위키</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/?hl=ko&gl=KR" title="YouTube" target="_blank" rel="noopener">
+                <div class="individual link">
+                    <img src="assets/images/youtube.svg" alt="YouTube" />
+                    <span>YouTube</span>
+                </div>
+            </a>
+
+            <a href="https://www.sooplive.co.kr" title="SOOP 메인" target="_blank" rel="noopener">
+                <div class="individual link">
+                    <img src="assets/images/soop.png" alt="SOOP 메인" />
+                    <span>SOOP 메인</span>
+                </div>
+            </a>
+
+            <a href="https://play.sooplive.co.kr/gosegu2" title="SOOP 고세구" target="_blank" rel="noopener">
+                <div class="individual link">
+                    <img src="assets/images/soop_gosegu.png" alt="SOOP 고세구" />
+                    <span>SOOP 고세구</span>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/temporal-polyfill@0.2.5/global.min.js"></script>
+    <script src="assets/js/clock.js" type="module"></script>
+</body>
+
+</html>

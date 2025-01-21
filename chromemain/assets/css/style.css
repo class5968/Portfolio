@@ -1,0 +1,123 @@
+/*
+    Chrome - New Tab 스타일시트
+
+    Created by: Minsu Kim <minsu.kim@lunaiz.com> on 2025-01-21
+    Updated by: Minsu Kim <minsu.kim@lunaiz.com> on 2025-01-21
+*/
+
+/*----- Global -----*/
+:root {
+    --background: #fefef7;
+    --foreground: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard Variable", "Pretendard", sans-serif;
+
+  background: var(--background);
+  color: var(--foreground);
+}
+
+a {
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+main {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  min-width: 768px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.individual {
+  border-radius: 16px;
+
+  background: rgba(153, 153, 153, 0.08);
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*----- Clock -----*/
+.vertical-clocks {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 84px 128px;
+}
+
+.clock span:first-child {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.clock span:last-child {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/*----- Links -----*/
+.horizontal-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.link {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 12px 22px;
+}
+
+.link img {
+  width: 72px;
+  height: 72px;
+}
+
+.link span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.grid-links img {
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*----- Dark Mode -----*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1c1c1e;
+    --foreground: #ffffff;
+  }
+
+  .individual {
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.32);
+  }
+}
