@@ -25,10 +25,9 @@
 }
 .home {
     display: flex;
-    padding: 32px;
-    padding-bottom: 128px;
     gap: 8px;
     margin: 0px;
+    padding-left: 32px;
     flex-direction: column;
     justify-content: center;
     vertical-align: middle;
