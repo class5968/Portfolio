@@ -9,6 +9,8 @@
     background-color: #000000;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .background {
     justify-content: center;
@@ -23,6 +25,8 @@
     height: 100vh;
     flex-direction: row;
     text-decoration-style: none;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .home {
     display: flex;
@@ -36,12 +40,13 @@
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .portfolio {
     display: flex;
     padding: 32px;
     padding-top: 64px;
-    padding-bottom: 128px;
     gap: 32px;
     flex: 1;
     margin: 0px;
@@ -51,12 +56,13 @@
     height: auto;
     overflow-x: hidden;
     overflow-y: scroll;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .broadcast {
     display: flex;
     padding: 32px;
     padding-top: 64px;
-    padding-bottom: 128px;
     gap: 32px;
     flex: 1;
     margin: 0px;
@@ -66,12 +72,13 @@
     height: auto;
     overflow-x: hidden;
     overflow-y: scroll;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .contacts {
     display: flex;
     padding: 32px;
     padding-top: 64px;
-    padding-bottom: 128px;
     gap: 32px;
     margin: 0px;
     flex-direction: column;
@@ -80,6 +87,8 @@
     height: auto;
     overflow-x: hidden;
     overflow-y: scroll;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .maintitle {
     font-family: "Pretendard";
@@ -88,6 +97,8 @@
     font-size: 32px;
     color: #fff;
     margin: 0px;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .subtitle {
     font-family: "Pretendard";
@@ -98,6 +109,8 @@
     margin: 0px;
     line-height: 32px;
     width: 100%;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .maintext {
@@ -108,6 +121,8 @@
     color: #fff;
     margin: 0px;
     white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .subtext {
     font-family: "Pretendard";
@@ -117,6 +132,8 @@
     color: #fff;
     margin: 0px;
     white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .primary {
     display: flex;
@@ -127,6 +144,8 @@
     margin: 0px;
     white-space: nowrap;
     width: 100%;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .secondary {
     display: flex;
@@ -137,6 +156,8 @@
     flex: 1;
     margin: 0px;
     white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .youtube {
     display: flex;
@@ -144,6 +165,8 @@
     gap: 8px;
     width: 100%;
     margin: 0px;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 
 }
 .video-container>iframe {
@@ -151,6 +174,8 @@
     border-radius: 16px;
     width: 100%;
     aspect-ratio: 16/9;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .navbar {
     height: 80px;
@@ -159,6 +184,8 @@
     bottom: 0;
     display: flex;
     justify-content: center;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .navbarbackground {
     display: inline-flex;
@@ -175,7 +202,8 @@
     justify-content: space-between;
     border: 2px solid rgba(255, 255, 255, 0.16);
     height: 48px;
-
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .selected {
     display: flex;
@@ -185,6 +213,8 @@
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 8px;
     border: 2px solid rgba(255, 255, 255, 0.16);
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 .notselected {
     display: flex;
@@ -194,4 +224,31 @@
     border-radius: 999px;
     color: rgba(255, 255, 255, 0.16);
     border: 2px solid rgba(255, 255, 255, 0);
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@media screen and (max-width: 720px){
+  body{
+    overflow-y: hidden;
+  }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeOut {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
