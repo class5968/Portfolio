@@ -195,3 +195,9 @@
     color: rgba(255, 255, 255, 0.16);
     border: 2px solid rgba(255, 255, 255, 0);
 }
+
+@media screen and (max-width: 720px){
+  body{
+    overflow-y: hidden;
+  }
+}
