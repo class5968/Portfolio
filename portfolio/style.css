@@ -248,3 +248,18 @@
         opacity: 0;
     }
 }
+/* 크롬, 엣지, 사파리 */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* 파이어폭스 */
+  html {
+    scrollbar-width: none;
+  }
+  
+  /* IE, Edge (구버전) */
+  body {
+    -ms-overflow-style: none;
+  }
+  
