@@ -47,6 +47,7 @@
     display: flex;
     padding: 32px;
     padding-top: 64px;
+    padding-bottom: 128px;
     gap: 32px;
     flex: 1;
     margin: 0px;
@@ -170,6 +171,14 @@
 
 }
 .video-container>iframe {
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.image {
     border: none;
     border-radius: 16px;
     width: 100%;

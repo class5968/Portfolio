@@ -178,6 +178,14 @@
     opacity: 0;
     animation: fadeIn 0.3s ease-in-out forwards;
 }
+.image {
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
 .navbar {
     height: 80px;
     width: 100%;
