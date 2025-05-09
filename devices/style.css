@@ -1,0 +1,265 @@
+*{
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    margin: 0%; 
+    height: 100%; 
+    width: 100%; 
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.background {
+    justify-content: center;
+    align-items: start;
+    max-width: 450px;
+    display: flex;
+    background-color: #000000;
+    flex: 1;
+    padding: 0px;
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    text-decoration-style: none;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.home {
+    display: flex;
+    gap: 8px;
+    margin: 0px;
+    padding-left: 32px;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.portfolio {
+    display: flex;
+    padding: 32px;
+    padding-top: 64px;
+    padding-bottom: 128px;
+    gap: 32px;
+    flex: 1;
+    margin: 0px;
+    flex-direction: column;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.broadcast {
+    display: flex;
+    padding: 32px;
+    padding-top: 64px;
+    gap: 32px;
+    flex: 1;
+    margin: 0px;
+    flex-direction: column;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.contacts {
+    display: flex;
+    padding: 32px;
+    padding-top: 64px;
+    gap: 32px;
+    margin: 0px;
+    flex-direction: column;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.maintitle {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    color: #fff;
+    margin: 0px;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.subtitle {
+    font-family: "Pretendard";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28px;
+    color: #fff;
+    margin: 0px;
+    line-height: 32px;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.maintext {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #fff;
+    margin: 0px;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.subtext {
+    font-family: "Pretendard";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    margin: 0px;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.primary {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    height: 48px;
+    justify-content: center;
+    margin: 0px;
+    white-space: nowrap;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 48px;
+    justify-content: center;
+    flex: 1;
+    margin: 0px;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.youtube {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin: 0px;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+
+}
+.video-container>iframe {
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.image {
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.navbar {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbarbackground {
+    display: inline-flex;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(8px);
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 8px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    height: 48px;
+}
+.selected {
+    display: flex;
+    align-items: center;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+}
+.notselected {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.16);
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeOut {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* 크롬, 엣지, 사파리 */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* 파이어폭스 */
+  html {
+    scrollbar-width: none;
+  }
+  
+  /* IE, Edge (구버전) */
+  body {
+    -ms-overflow-style: none;
+  }
+  
